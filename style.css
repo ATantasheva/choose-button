@@ -1,0 +1,95 @@
+/*Обнуление*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	color: #000;
+   background-color: red;
+}
+
+/*Для оболочки и футера +для скролла */
+.wrapper {
+   min-height: 100%;
+	overflow: hidden;
+   position: relative;
+}
+.buttons {  /*центровка посередине старницы адаптивно*/
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+ }
+
+.button {
+   cursor: pointer;
+  background-color: red;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+transition: box-shadow 0.3s ease 0s ;
+
+}
+.button:not(:last-child) {
+   margin: 0px 10px 0px 0px;
+}
+.button:hover {
+   width: 65px;
+   height: 65px;
+}
+.red {
+   background-color: red;
+}
+.blue {
+   background-color: blue;
+}
+.green {
+   background-color: green;
+}
+.yellow {
+   background-color: yellow;
+}
+/*прибавляем классы*/
+
+body.color__red {
+   background-color:#BC2F2F;
+}
+body.color__green {
+   background-color:#087F23;
+}
+body.color__blue {
+   background-color: #2F4FBC;
+}
+body.color__yellow {
+   background-color: #EBF515;
+}
